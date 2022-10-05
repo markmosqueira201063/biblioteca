@@ -16,7 +16,7 @@
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
-        <a class="navbar-brand" href="<?php echo base_url(); ?>admin/listar">Vida Informático</a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>admin/listar">Biblioteca Central</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto">
@@ -90,8 +90,8 @@
                 </div>
                 <div class="sb-sidenav-footer bg-primary">
                     <div class="small">Síguenos en: </div>
-                    <a href="https://web.facebook.com/Vida-Inform%C3%A1tico-102763128069281" class="text-white"><i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="https://www.instagram.com/vida_informatico/" class="text-danger"><i class="fab fa-instagram-square"></i> Instagram</a>
+                    <a href="https://web.facebook.com/marky.7u7" class="text-white"><i class="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="https://www.instagram.com/marky.owo/?fbclid=IwAR11C2CCt6vqrgzVhG0jORQufVDTlF7Qae5bSQQnDBpWIsxGjkz5yncmDs4" class="text-danger"><i class="fab fa-instagram-square"></i> Instagram</a>
                 </div>
             </nav>
         </div>

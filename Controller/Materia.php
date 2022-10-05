@@ -9,17 +9,17 @@ class Materia extends Controllers
         }
         parent::__construct();
     }
-    public function materia()
+    public function Materia()
     {
         $data = $this->model->selectMateria();
         $this->views->getView($this, "listar", $data);
     }
     public function registrar()
     {
-        $materia = $_POST['nombre'];
-        $insert = $this->model->insertarMateria($materia);
+        $Materia = $_POST['nombre'];
+        $insert = $this->model->insertarMateria($Materia);
         if ($insert) {
-            header("location: " . base_url() . "materia");
+            header("location: " . base_url() . "Materia");
             die();    
         }
     }
@@ -28,7 +28,7 @@ class Materia extends Controllers
         $id = $_GET['id'];
         $data = $this->model->editMateria($id);
         if ($data == 0) {
-            $this->materia();
+            $this->Materia();
         } else {
             $this->views->getView($this, "editar", $data);
         }
@@ -39,7 +39,7 @@ class Materia extends Controllers
         $nombre = $_POST['nombre'];
         $actualizar = $this->model->actualizarMateria($nombre, $id);
         if ($actualizar) {   
-            header("location: " . base_url() . "materia");
+            header("location: " . base_url() . "Materia");
             die();
         }
     }
@@ -47,14 +47,14 @@ class Materia extends Controllers
     {
         $id = $_POST['id'];
         $this->model->estadoMateria(0, $id);
-        header("location: " . base_url() . "materia");
+        header("location: " . base_url() . "Materia");
         die();
     }
     public function reingresar()
     {
         $id = $_POST['id'];
         $this->model->estadoMateria(1, $id);
-        header("location: " . base_url() . "materia");
+        header("location: " . base_url() . "Materia");
         die();
     }
 }

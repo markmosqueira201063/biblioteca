@@ -64,7 +64,7 @@
         $pdf->SetFont('Arial', 'B', 12);
         $pdf->Cell(195, 5, utf8_decode($datos['nombre']), 0, 1, 'C');
 
-        $pdf->image(base_url() . "/Assets/img/logo.jpg", 180, 10, 30, 30, 'JPG');
+        $pdf->image(base_url() . "/Assets/images/logo.jpg", 180, 10, 30, 20, 'JPG');
         $pdf->SetFont('Arial', 'B', 10);
         $pdf->Cell(20, 5, utf8_decode("Teléfono: "), 0, 0, 'L');
         $pdf->SetFont('Arial', '', 10);
@@ -98,7 +98,7 @@
             $pdf->Cell(15, 5, $row['cantidad'], 1, 1, 'L');
             $contador++;
         }
-        $pdf->Output("prestamos.pdf", "I");
+        $pdf->Output("Prestamos.pdf", "I");
         }
     
     }

@@ -131,6 +131,6 @@
                 $pdf->Cell(15, 5, $row['cantidad'], 1, 1, 'L');
                 $contador++;
             }
-            $pdf->Output("libros.pdf", "I");
+            $pdf->Output("Libros.pdf", "I");
         }
 }
